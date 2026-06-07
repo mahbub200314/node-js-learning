@@ -1,3 +1,6 @@
-import {extname} from 'path'
+const url = require('url')
 
-console.log(`directory this folder :`, __dirname)
+const myURL = new URL('https://www.example.com/products?id=10')
+
+console.log(myURL.protocol)
+console.log(myURL.search)
